@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe Name"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/recipe_details"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Recipe Details"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="10dp"
+            android:gravity="top"
+            android:minLines="3"
+            android:maxLines="3"/>
+
+        <Spinner
+            android:id="@+id/cuisine_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cuisine_array"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"/>
+
+        <Button
+            android:id="@+id/add_button"
+            style="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Add Recipe"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</RelativeLayout>
